@@ -1,0 +1,35 @@
+  public static void Main (string[] args) {
+    int idade, dia, mes, ano;
+		string nome;
+		
+		Console.WriteLine("Bom dia!");
+		Console.WriteLine("Qual seu nome?");
+		nome = Console.ReadLine();
+		
+		Console.WriteLine("Olá, "+nome+", vou te ajudar a saber sua idade.");
+    Console.WriteLine("Aperte ENTER para continuar...");
+    Console.ReadLine();
+    
+    Console.WriteLine(nome+", me informe o dia de nascimento.");
+		dia = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Ok, "+nome+", agora me diga o mês de nascimento.");
+		mes = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Ótimo! Por último, "+nome+", qual o ano de seu nascimento?");
+		ano = int.Parse(Console.ReadLine());
+		
+		idade = 2020-ano;
+		
+		Console.WriteLine("Estou fazendo os cálculos, "+nome);
+    Console.WriteLine("Aperte ENTER para concluir...");
+    Console.ReadLine();
+
+		Console.WriteLine("Muito bem, "+nome+", você nasceu em "+dia+" / "+mes+" / "+ano+", portanto, você tem "+idade+" anos.");
+		
+		Console.WriteLine("Espero ter ajudado!");
+		Console.ReadLine();
+
+    
+  }
+}
